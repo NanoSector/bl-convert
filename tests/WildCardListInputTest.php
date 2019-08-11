@@ -22,7 +22,7 @@ class WildCardListInputTest extends TestCase
         $this->assertEquals($expected, $output->getHostnames());
 
         $outputComments = WildCardListInput::fromFile(__DIR__ . '/testInputFiles/wildcardinput_comments.txt');
-        $this->assertEquals($expected, $output->getHostnames());
+        $this->assertEquals($expected, $outputComments->getHostnames());
     }
 
     public function testFromInvalidFile()

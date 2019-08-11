@@ -23,7 +23,7 @@ class HostsListInputTest extends TestCase
         $this->assertEquals($expected, $output->getHostnames());
 
         $outputComments = HostsListInput::fromFile(__DIR__ . '/testInputFiles/hostsinput_comments.txt');
-        $this->assertEquals($expected, $output->getHostnames());
+        $this->assertEquals($expected, $outputComments->getHostnames());
     }
 
     public function testFromInvalidFile()
