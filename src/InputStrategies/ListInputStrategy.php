@@ -16,11 +16,4 @@ interface ListInputStrategy
      * @throws InvalidFileFormatException when the file is in an invalid format
      */
     public static function fromFile(string $filename): HostnameList;
-
-    /**
-     * Takes an array of hostnames and turns it into a list instance.
-     * @param array $hostnames the hostnames to add to the list instance
-     * @return HostnameList an instance of the appropriate list type
-     */
-    public static function fromHostnames(array $hostnames): HostnameList;
 }

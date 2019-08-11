@@ -36,16 +36,4 @@ class WildCardListInputTest extends TestCase
         $this->expectException(UnreadableFileException::class);
         WildCardListInput::fromFile(__DIR__ . '/testInputFiles/wildcardinput_missing.txt');
     }
-
-    public function testFromDomains()
-    {
-        $domains = [
-            'test.com',
-            'testing.com'
-        ];
-
-        $output = WildCardListInput::fromHostnames($domains);
-
-        $this->assertEquals($domains, $output->getHostnames());
-    }
 }

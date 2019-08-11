@@ -37,14 +37,6 @@ class WildCardListInput implements ListInputStrategy
             $hostnames[] = $line;
         }
 
-        return self::fromHostnames($hostnames);
-    }
-
-    /** @inheritDoc
-     * @throws InvalidHostnameException when a hostname in the list is invalid
-     */
-    public static function fromHostnames(array $hostnames): HostnameList
-    {
         return new HostnameList($hostnames);
     }
 }
