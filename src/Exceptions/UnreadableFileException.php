@@ -4,7 +4,9 @@
 namespace Yoshi2889\BlConvert\Exceptions;
 
 
-class UnreadableFileException extends \Exception
+use Exception;
+
+class UnreadableFileException extends Exception
 {
 
 }

@@ -4,7 +4,9 @@
 namespace Yoshi2889\BlConvert\Exceptions;
 
 
-class FilterDepthException extends \Exception
+use Exception;
+
+class FilterDepthException extends Exception
 {
 
 }

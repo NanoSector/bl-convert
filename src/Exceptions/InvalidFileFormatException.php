@@ -4,7 +4,9 @@
 namespace Yoshi2889\BlConvert\Exceptions;
 
 
-class InvalidFileFormatException extends \Exception
+use Exception;
+
+class InvalidFileFormatException extends Exception
 {
 
 }

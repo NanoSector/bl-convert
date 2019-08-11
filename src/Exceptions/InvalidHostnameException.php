@@ -4,7 +4,9 @@
 namespace Yoshi2889\BlConvert\Exceptions;
 
 
-class InvalidHostnameException extends \Exception
+use Exception;
+
+class InvalidHostnameException extends Exception
 {
 
 }

@@ -4,7 +4,9 @@
 namespace Yoshi2889\BlConvert\Exceptions;
 
 
-class ListSizeException extends \Exception
+use Exception;
+
+class ListSizeException extends Exception
 {
 
 }

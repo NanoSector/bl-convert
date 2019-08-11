@@ -4,7 +4,9 @@
 namespace Yoshi2889\BlConvert\Exceptions;
 
 
-class InvalidDestinationException extends \Exception
+use Exception;
+
+class InvalidDestinationException extends Exception
 {
 
 }
