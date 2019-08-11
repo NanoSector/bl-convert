@@ -16,7 +16,7 @@ class WildCardListInput implements ListInputStrategy
     public static function fromFile(string $filename): HostnameList
     {
         $resource = @fopen($filename, 'rb');
-        if (!$resource) {
+        if ($resource === false) {
             throw new UnreadableFileException('Unable to read the given file: ' . $filename);
         }
 
