@@ -49,6 +49,7 @@ class LittleSnitchListOutput implements ListOutputStrategy
 
     /**
      * @inheritDoc
+     * @throws ListSizeException when the list is too large for Little Snitch to handle
      */
     public function writeList(ListInterface $list): void
     {
